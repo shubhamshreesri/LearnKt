@@ -1,8 +1,9 @@
 package com.sharableprojectbyshubham.learnkt
 
+import java.util.EnumSet.range
 import java.util.logging.Logger.global
 
-fun main(){
+//fun main(){
 //    var str="shubham"
 //
 //
@@ -21,16 +22,27 @@ fun main(){
 //
 //    var a=34;val b=34
 
-    val ite:Int=34
-    for(ite in 1..10)
-    {
-        println("5 * $ite = "+5*ite)
+//    val ite:Int=34
+//    for(ite in 1..10)
+//    {
+//        println("5 * $ite = "+5*ite)
+//    }
+//
+//    print(ite)
+//
+//}
+//
+//private infix fun Any.ite(println: Unit) {
+
+//}
+
+fun main(){
+    val myList= mutableListOf<String>()
+
+    for(i in 1..5){
+        myList.add(i-1, readLine().toString())
     }
 
-    print(ite)
-
-}
-
-private infix fun Any.ite(println: Unit) {
+    println(myList)
 
 }
