@@ -37,12 +37,25 @@ import java.util.logging.Logger.global
 //}
 
 fun main(){
-    val myList= mutableListOf<String>()
+//    val myList= mutableListOf<String>()
+//
+//    for(i in 1..5){
+//        myList.add(i-1, readLine().toString())
+//    }
+//
+//    println(myList)
 
-    for(i in 1..5){
-        myList.add(i-1, readLine().toString())
+    var a1:Int? =12;//its means , possibility of null in a1
+    a1=12/2
+
+    println(a1)
+
+    for(j in 1..1){
+     print(j)
     }
 
-    println(myList)
+    println(a1 +12)
+
+
 
 }
