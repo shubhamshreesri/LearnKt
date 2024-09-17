@@ -3,9 +3,9 @@ import java.util.*
 
 /****** Main Function *****/
 //An entry point of a Kotlin application is the main function
-fun main(){
-   print("Hello Kotlin")
-}
+//fun main(){
+//   print("Hello Kotlin")
+//}
 //fun main(args:Array<String>){
 //    print("Hello Kotlin")
 //}
@@ -617,19 +617,19 @@ operations that transform strings return their results in a new String object, l
 //}
 
 // # Lambda Expression
-//fun main() {
-//    val add = { a:Int, b:Int ->  a + b}
-//    println(add(10,20))
-//
-//    val sum:(Int, Int) -> Int = {a,b -> a + b}
-//    println(sum(20, 40))
-//    hOF(10, 20, { a:Int, b:Int -> a + b })
-//    hOF(10, 20) { a:Int, b:Int -> a + b }
-//}
-//
-//fun hOF(a:Int, b:Int, callback:(Int, Int) -> Int ){
-//    println(callback(a, b))
-//}
+fun main() {
+    val add = { a:Int, b:Int ->  a + b}
+    println(add(10,20))
+
+    val sum:(Int, Int) -> Int = {a,b -> a + b}
+    println(sum(20, 40))
+    hOF(10, 20, { a:Int, b:Int -> a + b })
+    hOF(10, 20) { a:Int, b:Int -> a + b }
+}
+
+fun hOF(a:Int, b:Int, callback:(Int, Int) -> Int ){
+    println(callback(a, b))
+}
 
 // # Anonymous Function
 //fun main() {
